@@ -6,10 +6,12 @@ config :combover, Combover.Robot,
   adapter: Hedwig.Adapters.Slack,
   name: "combover",
   aka: "/",
+  token: "xoxb-84480815024-UpUD4RRQ6SHQjR3TxAcIh4xC",
   responders: [
     {Hedwig.Responders.Help, []},
     {Hedwig.Responders.GreatSuccess, []},
-    {Hedwig.Responders.ShipIt, []}
+    {Hedwig.Responders.ShipIt, []},
+    {Combover.Responders.Surf, []}
   ]
 
 
